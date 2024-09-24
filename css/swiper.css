@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* 外加 */
+.swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* 外加 */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 97%;
+  color: black;
+  z-index: 20;
+}
+@media (max-width: 1600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 96%;
+  }
+}
+@media (max-width: 1085px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 97.5%;
+  }
+}
+
+.swiper-button-next {
+  right: 45%;
+  transform: translateX(300%);
+}
+
+.swiper-button-prev {
+  left: 45%;
+  transform: translateX(-300%);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  margin: 0 15px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+.stop {
+  cursor: pointer;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 30%;
+}
+@media (max-width: 1085px) {
+  .stop {
+    left: 25%;
+  }
+}
+@media (max-width: 840px) {
+  .stop {
+    left: 20%;
+  }
+}
+@media (max-width: 600px) {
+  .stop {
+    left: 15%;
+  }
+}
+@media (max-width: 400px) {
+  .stop {
+    left: 10%;
+  }
+}
+
+.play {
+  cursor: pointer;
+  background-color: rgb(203, 113, 113);
+  width: 20px;
+  height: 20px;
+  display: none;
+  position: absolute;
+  left: 30%;
+}
+@media (max-width: 1085px) {
+  .play {
+    left: 25%;
+  }
+}
+@media (max-width: 840px) {
+  .play {
+    left: 20%;
+  }
+}
+@media (max-width: 600px) {
+  .play {
+    left: 15%;
+  }
+}
+@media (max-width: 400px) {
+  .play {
+    left: 10%;
+  }
+}/*# sourceMappingURL=swiper.css.map */
